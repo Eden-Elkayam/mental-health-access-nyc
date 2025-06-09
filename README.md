@@ -79,9 +79,30 @@ The scatterplot shows a **moderate positive correlation** between depression rat
 
 ---
 
+## Required Datasets (Not Included)
+
+The following datasets are used in this project but are **not included in the repository** due to size and licensing constraints. Please download them manually and place them in the project’s root directory.
+
+1. **NPI Registry Data**
+   - **Filename:** `npidata_pfile_20050523-20231112.pipe.gz`
+   - **Source:** [NPPES Data Dissemination](https://download.cms.gov/nppes/NPI_Files.html)
+   - **Use:** Contains provider taxonomy codes and ZIP codes for healthcare providers.
+
+2. **CDC PLACES Dataset**
+   - **Filename:** `PLACES_20241119.gz`
+   - **Source:** [CDC PLACES Data](https://chronicdata.cdc.gov/)
+   - **Use:** Provides ZIP-code-level depression rates and population data for adults 18+.
+
+3. **U.S. ZIP Code Dataset**
+   - **Filename:** `uszips.txt`
+   - **Source:** [SimpleMaps ZIP Code Database (Free version)](https://simplemaps.com/data/us-zips) or equivalent
+   - **Use:** Used to filter NYC ZIP codes from nationwide data.
+  
+---
+
 ## How to Run
 
-Requires a Linux environment.
+This project is designed for a Linux environment. Once the required datasets are downloaded and placed in the project directory, run:
 
 ```bash
 make
